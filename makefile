@@ -1,4 +1,4 @@
 all: 
-	gcc -Wall -c common.c
-	gcc -Wall client.c common.o -o client
-	gcc -Wall server.c common.o -o server -lm
+	gcc -Wall -c ./bin/common.c -o ./bin/common.o
+	gcc -Wall ./bin/client.c ./bin/common.o -o ./bin/client
+	gcc -Wall ./bin/server.c ./bin/common.o -o ./bin/server -lm
